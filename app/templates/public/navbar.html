@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QMASTER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+</head>
+
+<body background="{{ url_for('static', filename='images/background/ANALYSE LAPTOP.jpg') }}">
+    <input type="checkbox" id="check">
+    <div class="navbar">
+      <img class="logo" src="{{ url_for('static', filename='images/icons/PJT LOGO MOBILE.png') }}" alt="App Logo"><img class="strip" src="/icons/MOBILE strip download qp.png" alt="Download Question Papers">
+      <label for="check">
+        <img src="{{ url_for('static', filename='images/icons/options icon.png') }}" id="btn">
+        <img src="{{ url_for('static', filename='images/icons/options icon.png') }}" id="cancel">
+      </label>
+    </div>
+    <div class="sidebar">
+      <header>{% block header %}{% endblock %}</header>
+      <a href="{{ url_for('topicScoreUserInput') }}">
+        <img src="{{ url_for('static', filename='images/icons/ANALYSE TOPICS LAPTOP.png') }}" alt="Analyse Topics">
+      </a>
+      <a href="{{ url_for('generateQbankUserInput') }}">
+        <img src="{{ url_for('static', filename='images/icons/GENERATE QBANK LAPTOP.png') }}" alt="Generate Qbank">
+      </a>
+      <a href="{{ url_for('downloadqpapers') }}">
+        <img src="{{ url_for('static', filename='images/icons/DOWNLOAD QPAPERS LAPTOP.png') }}" alt="Download Qpapers">
+      </a>
+      <a href="{{ url_for('help') }}">
+        <img src="{{ url_for('static', filename='images/icons/HELP LAPTOP.png') }}" alt="Help">
+      </a>
+    </div>
+
+
+
+    <div class="main-body">{% block mainbody %}{% endblock %}</div> 
+    
+    <br>
+</body>
+
+</html>

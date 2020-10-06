@@ -1,0 +1,160 @@
+
+a {
+    margin: 20px;
+}
+h1 {
+    border-color: crimson;
+}
+
+.contact-form{
+    background-color: grey;
+}
+
+.sub {
+    margin-top: 5px;
+}
+
+.analyze {
+    margin-top: 20px;
+}
+
+.upload {
+    margin-top: 10px;
+}
+
+.upload-image {
+    margin-top: 20px;
+}
+
+.input-nqp {
+    margin-top: 20px;
+}
+
+.open-button {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.download-button {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.feedback-page {
+    background-color: grey;
+}
+
+
+.multiselect {
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 8px;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    width: 100%;
+    height: 35px;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  .checkboxes label {
+    display: block;
+  }
+  
+  #checkboxes label:hover {
+    background-color: #1e90ff;
+  }
+
+  .a1 {
+      margin-left: 170px;
+  }
+
+.f3 {
+    font-family: Geneva;
+    font-size: 48px;
+    font-weight: normal;
+}
+.f1 {
+    font-family: Lucida Bright;
+    font-size: 36px;
+}
+.f2 {
+    background-color: rgb(240,240,240);
+}
+.f4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.f5 {
+    margin-top: 20px;
+}
+.f6 {
+    font-weight: bold;
+}
+
+.d1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.d2 {
+    margin-bottom: 10px;
+}
+
+.d3 {
+    font-family: Lucida Bright
+}
+
+.d4 {
+    font-family: Geneva;
+}
+
+.e1 {
+    font-family: Bookman;
+    margin-left: 500px;
+}
+
+.e2 {
+    font-weight: bold;
+}
+
+.mobileMenu {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        margin: auto;
+        transform: translateX(-100%);
+        transition: all ease 0.25s;
+        
+    }
+  .mt {
+      margin-top: 60px;
+  }
+
+  .g1 {
+      margin-top: 40px;
+      background-color: lightslategray;
+  }
+
+  .g2 {
+      margin-left: 250px;
+  }
+
+

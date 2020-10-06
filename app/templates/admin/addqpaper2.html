@@ -1,0 +1,18 @@
+{% extends 'admin/addqpaper.html' %}
+
+{% block content %}
+<form action="/admin/addqpaper3" onsubmit="editQpaper()">
+    <label for="patternType">Pattern Type:</label>
+    <br>
+    <input type="text" name="patternType" id="patternType">
+    <br>
+    <label for="qpaperData">Edit Data:</label>
+    <br>
+    <textarea name="qpaperData" id="qpaperData" rows="70" cols="100"></textarea>
+    <br>
+    <button class="btn btn-primary mb-2" type="submit">DONE</button>
+</form>   
+<script type="text/javascript">
+    var qpaperData = '{{ qpaperData|tojson|safe }}';
+</script>        
+{% endblock %}

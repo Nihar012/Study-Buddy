@@ -1,0 +1,40 @@
+{% extends 'public/userinput.html' %}
+
+{% block results %}
+<div class="form-row align-items-center justify-content-md-center">
+
+    <button class="btn btn-primary mb-2" onclick="createSyllabusData();createQpaperData();generateQuestions();generateScores()">VIEW SCORE</button>
+       
+    
+
+    <script>               
+        var tokenizedSyllabus = '{{ tokenizedSyllabus|tojson|safe }}';
+        var qpaperdata = '{{ qpaperdata|tojson|safe }}';     
+        // document.getElementById("demo").innerHTML = two[0][0].questions[0]; //(qpaperdata[0][0].questions[0].match(/\n/g)||[]).length;    
+    </script>
+</div>
+
+<div id="scoreres">
+    <p style="color: rgb(13, 14, 14); font-family: Arial; font-size: x-large; font-weight: bold;">UNIT 1 TOPICS</p>
+    <br>
+    <p id="1scores" style="color: rgb(75, 74, 74); font-family: 'Lucida Sans'; font-size: medium;"></p>
+
+    <br><br>
+
+    <p style="color: rgb(13, 14, 14); font-family: Arial; font-size: x-large; font-weight: bold;">UNIT 2 TOPICS</p>
+    <br>
+    <p id="2scores" style="color: rgb(75, 74, 74); font-family: 'Lucida Sans'; font-size: medium;"></p>
+
+    <br><br>
+
+    <p style="color: rgb(13, 14, 14); font-family: Arial; font-size: x-large; font-weight: bold;">UNIT 3 TOPICS</p>
+    <br>
+    <p id="3scores" style="color: rgb(75, 74, 74); font-family: 'Lucida Sans'; font-size: medium;"></p>
+
+    <br><br>
+
+    <p style="color: rgb(13, 14, 14); font-family: Arial; font-size: x-large; font-weight: bold;">UNIT 4 TOPICS</p>
+    <br>
+    <p id="4scores" style="color: rgb(75, 74, 74); font-family: 'Lucida Sans'; font-size: medium;"></p>
+</div>
+{% endblock %}

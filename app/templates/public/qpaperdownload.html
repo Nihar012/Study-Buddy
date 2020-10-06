@@ -1,0 +1,133 @@
+{% extends 'public/navbar.html' %}
+
+{% block header %}
+<img src="{{ url_for('static', filename='images/icons/LOGO downloadqp LAPTOP.png') }}" alt="App Logo">
+{% endblock %}
+
+{% block mainbody %}
+<div id="inputForm2" class="container contact-form">  
+    <div class="form-row align-items-center justify-content-md-center">
+      <div class="col-auto my-1">
+        <label for="subjects2" class="form-row justify-content-md-center">SELECT SUBJECT:</label>
+        <select name="subjects2" id="subjects2">
+        </select>
+      </div>
+    </div>
+</div>
+
+
+<div class="container carddecks w-75 p-3">
+  <div class="row row-cols-1 row-cols-md-3" id="qpapercards">
+
+
+    <!-- <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">MAY / JUNE 2017</h5>
+          <a href="{{ url_for('download', filename='JAN-FEB_2016(Type2).pdf') }}">
+            <input class="btn btn-primary download-button" type="submit" value="Download">
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">NOV / DEC 2016</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">MAY / JUNE 2016</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">NOV / DEC 2015</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">MAY / JUNE 2015</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">NOC / DEC 2014</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">MAY / JUNE 2014</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">NOV / DEC 2013</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">MAY / JUNE 2013</h5>
+          <input class="btn btn-primary download-button" type="submit" value="Download">
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card" style="width: 18rem;">
+        <img src="ddg.png" class="card-img-top" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">NOV / DEC 2012</h5>
+          <a href="{{ url_for('download', filename='ole.pdf') }}">
+            <input class="btn btn-primary download-button" type="submit" value="Download">
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="pdfobject.min.js"></script>
+<script src="{{ url_for('static', filename='js/download.js') }}"></script>
+{% endblock %}

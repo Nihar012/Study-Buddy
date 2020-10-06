@@ -1,0 +1,25 @@
+{% extends 'public/navbar.html' %}
+
+{% block header %}
+<img src="{{ url_for('static', filename='images/icons/LOGO help LAPTOP.png') }}" alt="App Logo">
+{% endblock %}
+
+{% block mainbody %}
+<div id="scoreres">
+<h1 style="color: rgb(13, 14, 14); font-family: Arial; font-size: x-large; font-weight: bold;">GENERATING SCORE</h1>
+<br><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 1: Choose the subject</h2><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 2: Select question papers</h2><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 3: Upload the syllabus image and click done</h2><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 4: Click 'VIEW SCORE' to display topics score</h2><br><br><br>
+
+<h1 style="color: rgb(13, 14, 14); font-family: Arial; font-size: x-large; font-weight: bold;">GENERATING QUESTION BANK</h1>
+<br><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 1: Choose the subject</h2><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 2: Select question papers</h2><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 3: Upload the syllabus image and click done</h2><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 4: Click 'GENERATE QBANK' to generate a question bank</h2><br>
+<h2 style="color: rgb(13, 14, 14); font-size: x-large;">Step 5(optional): Click 'GENERATE QBANK' multiple times to generate a different question bank each time</h2><br>
+<br><br>
+</div>
+{% endblock %}

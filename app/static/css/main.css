@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.sidebar{
+  position: fixed;
+  width: 9%;
+  left: 0;
+  top: 0;
+  height: auto;
+  background: #1e1e1e;
+  transition: all .5s ease;
+  z-index: 1000;
+}
+.sidebar header img{
+  display: block;
+  width: 665%;
+  height: 22.5vh;
+  padding-bottom: 1px;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+  display: none;
+}
+.sidebar a{
+  display: block;
+  height: 19.32vh;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #464646;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+a.active,a:hover{
+  border: 5px solid #24d1f0;
+}
+.sidebar a img{
+  height: 100%;
+  width: 100%;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  display: none;
+}
+body{
+  background-repeat: no-repeat;
+  background-position: 9vw 22.5vh;
+  background-size: 91vw 77vh;
+  background-attachment: fixed;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+} 
+
+.main-body{
+  margin-left: 9vw;
+  margin-top: 22.5vh;
+  width: 91vw;
+  font-family: 'Open Sans', sans-serif;
+}
+/* #inputForm{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 70%;
+  background-color: rgba(255, 0, 0, 0.2);
+  font-family: 'Open Sans', sans-serif;
+}
+form{
+  width: 100%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+} */
+.contact-form{
+  width: 50%;
+  background-color: rgba(204, 204, 204, 0.9);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 120%;
+}
+.download-button {
+  background-color: #23df0b;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+#scoreres{
+  background-color: white;
+}
+
+
+@media(max-width : 480px){
+  .navbar{
+    display: block;
+    position: fixed;
+    background-image: url("/icons/MOBILE strip.png");   
+    background-size: cover;
+    width: 100vw;
+    height: 21vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+ .navbar .logo{
+    height: 21vw;
+    width: 12vh;
+  }
+  .navbar .strip{
+    height: 21vw;
+    margin-left: 0;
+  } 
+  .sidebar{
+    position: fixed;
+    width: 13vh;
+    left: 100vw;
+    height: auto;
+    background: #ffffff;
+    transition: all .5s ease;
+    top: 25%;
+    z-index: 1000;
+  }
+  .sidebar header{
+    display: none;
+  }
+  .sidebar a{
+    display: block;
+    height: 13vh;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #1e1e1e;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  a.active,a:hover{
+    border: 3px solid #24d1f0;
+  }
+  .sidebar a img{
+    height: 100%;
+    width: 100%;
+  }
+  label #btn,label #cancel{    
+    display: unset;
+    float: right;
+    padding-right: 5px;    
+    height: 21vw;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 76%;
+  }
+  #check:checked ~ label #btn{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    opacity: 1;
+    visibility: visible;
+  }
+  body{
+    background-image: none;
+  }
+}

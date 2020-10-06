@@ -1,0 +1,50 @@
+{% extends 'public/navbar.html' %}
+
+{% block header %}
+<img src="{{ url_for('static', filename='images/icons/LOGO analyse topics LAPTOP.png') }}" alt="App Logo">
+{% endblock %}
+
+{% block mainbody %}
+<div id="inputForm" class="container contact-form">
+    <form method="POST" enctype="multipart/form-data">
+      <br>
+      <div class="form-row align-items-center justify-content-md-center">
+        <div class="col-auto my-1">
+          <label for="subjects" class="form-row justify-content-md-center">SELECT SUBJECT:</label>
+          <select name="subjects" id="subjects"></select>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="form-row align-items-center justify-content-md-center">
+        <div class="col-auto my-1">
+          <label for="qpapers" class="form-row justify-content-md-center">SELECT QPAPERS:</label>
+          <select name="qpapers" id="qpapers" multiple></select>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="form-row align-items-center justify-content-md-center">
+        <div class="col-auto my-1">
+          <label for="syllabusImage" class="form-row justify-content-md-center">UPLOAD SYLLABUS IMAGE:</label>
+          <input type="file" name="syllabusImage" class="form-control-file form" accept=".png, .jpeg, .jpg">
+        </div>
+      </div>
+      <br>
+
+      <div class="form-row align-items-center justify-content-md-center">
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-primary mb-2">DONE</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+<br>
+
+<div>{% block results %}{% endblock %}</div>
+
+<script src="{{ url_for('static', filename='js/public.js') }}"></script>   
+{% endblock %}

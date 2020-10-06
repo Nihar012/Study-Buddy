@@ -1,0 +1,18 @@
+{% extends 'public/userinputqbank.html' %}
+
+{% block results %}
+<div class="form-row align-items-center justify-content-md-center">
+
+    <button class="btn btn-primary mb-2" onclick="createSyllabusData();createQpaperData();generateQuestions();randomizeQuestions()">GENERATE QBANK</button>
+
+
+    <script>
+        var tokenizedSyllabus = '{{ tokenizedSyllabus|tojson|safe }}';
+        var qpaperdata = '{{ qpaperdata|tojson|safe }}';
+        // document.getElementById("demo").innerHTML = two[0][0].questions[0]; //(qpaperdata[0][0].questions[0].match(/\n/g)||[]).length;
+    </script>
+</div>
+<div class="form-row align-items-center justify-content-md-center">
+    <p id="message" style="color: tomato; font-family: 'Lucida Sans';font-size: small;"></p>
+</div>
+{% endblock %}
